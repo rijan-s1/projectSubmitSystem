@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+    header('location: ../login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,27 +12,33 @@
     <title>Ready Proj</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="flex">
-        <div class="w-60 h-screen bg-gray-300 shadow-md">
-        <img src="logo.png" alt="logo" class="h-24 mt-5 mx-auto">
-        <ul class="mt-5">
-            <li class="p-2">
-                <a href="index.php" class="block hover:bg-gray-300 p-4 text-lg font-bold rounded-lg hover:text-xl">Dashboard</a>
-            </li>
-            <li class="p-2">
-                <a href="" class="block hover:bg-gray-300 p-4 text-lg font-bold rounded-lg hover:text-xl">Students</a>
-            </li>
-            <li class="p-2">
-                <a href="" class="block hover:bg-gray-300 p-4 text-lg font-bold rounded-lg hover:text-xl">Registrations</a>
-            </li>
-            <li class="p-2">
-                <a href="" class="block hover:bg-gray-300 p-4 text-lg font-bold rounded-lg hover:text-xl">View Project</a>
-            </li>
-            <li class="p-2">
-                <a href="" class="block hover:bg-gray-300 p-4 text-lg font-bold rounded-lg hover:text-xl">Logout</a>
-            </li>
-        </ul>
-
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-[#e5d4ef] shadow-md fixed top-0 w-full z-50">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <div class="flex items-center">
+                <img src="logo.png" alt="logo" object-cover class="h-12">
+            </div>
+            <ul class="flex space-x-6 text-lg font-bold">
+                <li>
+                    <a href="index.php" class="hover:bg-red-300 px-4 py-2  rounded-lg hover:text-xl">Dashboard</a>
+                </li>
+                <li>
+                    <a href="students.php" class="hover:bg-red-300 px-4 py-2 rounded-lg hover:text-xl">Students</a>
+                </li>
+                <li>
+                    <a href="registration.php" class="hover:bg-red-300 px-4 py-2 rounded-lg hover:text-xl">Registrations</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:bg-red-300 px-4 py-2 rounded-lg hover:text-xl">View Project</a>
+                </li>
+                <li>
+                    <a href="logout.php" class="hover:bg-red-300 px-4 py-2 rounded-lg hover:text-xl" onclick="return confirm('Are you sure, you want to logout?');">Logout</a>
+                </li>
+            </ul>
         </div>
-        <div class="p-4 flex-1">
+    </nav>
+
+   
+</body>
+</html>

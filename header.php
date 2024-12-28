@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +9,27 @@
 
 </head>
 <body>
-    <nav class="flex items-center justify-between px-12 bg-[#e5d4ef]"  >
-        <img src="img/logo.png" alt="logo" class="h-24">
-        <div class="flex">
-            <a href="login.php" class="p-2">Home</a>
-            <a href="register.php" class="p-2">Registrations</a>
-            <a href="" class="p-2">View Project</a>
-            <a href="" class="p-2">Dashboard</a>
-            <a href="" class="p-2">Login</a>
+    <!-- Navbar -->
+ <nav class="bg-[#e5d4ef] shadow-md fixed top-0 w-full z-50 ">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <div class="flex items-center">
+                <img src="img/logo.png" alt="logo" object-cover class="h-12 ">
+            </div>
+            <ul class="flex space-x-6 text-lg font-bold">
+                <li>
+                    <a href="index.php" class="hover:bg-red-300 px-4 py-2  rounded-lg hover:text-xl">Home</a>
+                </li>
+                
+                <li>
+                    <a href="register.php" class="hover:bg-red-300 px-4 py-2 rounded-lg hover:text-xl">Register</a>
+                </li>
+                <li>
+                    <a href="login.php" class="hover:bg-red-300 px-4 py-2 rounded-lg hover:text-xl">Login</a>
+                </li>
+                
+            </ul>
         </div>
     </nav>
 </body>
 </html> 
+ 

@@ -2,12 +2,12 @@
         <div class="grid grid-cols-3 gap-10 px-16 bg-blue-600 text-white py-10">
             <div>
                 <h2 class="font-bold text-xl">About Us</h2>
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                <p class="mt-2">This is a online Project Submission System. Register if you are not a verified user. If registered, you can submit your project.</p>
             </div>
             <div>
                 <h2 class="font-bold text-xl">Contact Us</h2>
-                <p>Ph: 987654322</p>
-                <p>Em: info@gmail.com</p>
+                <p>Ph: 9745445740</p>
+                <p>Em: rijansubedi0@gmail.com</p>
             </div>
             <div>
                 <h2 class="font-bold text-xl">Follow Us</h2>
