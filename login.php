@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       if ($user) {
         $_SESSION['student'] = $user['username'];
+        $_SESSION['student_id'] = $user['id'];
         header("Location: students/index.php");  // Student redirection to user page
         exit;
       } else {

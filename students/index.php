@@ -2,14 +2,12 @@
     include 'header.php';
 
 if (isset($_SESSION['student'])) {
-    echo "Welcome, " . $_SESSION['student'];
+    echo "Welcome, " . $_SESSION['student'];// username is stored during login.
 } else {
     echo "No student session found.";
 }
 
 
-
-$student_name = $_SESSION['student']; // Assuming name is stored during login.
 ?>
 
 <!DOCTYPE html>
