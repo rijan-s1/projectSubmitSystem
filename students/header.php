@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if(!isset($_SESSION['student'])){
+if((!isset($_SESSION['student']))&&(!isset($_SESSION['student_id']))){
     header('location: ../login.php');
 }
 ?>
