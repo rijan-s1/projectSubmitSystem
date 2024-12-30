@@ -7,6 +7,9 @@ $rowstd = mysqli_fetch_assoc($resultstd);
 $qryreg = "SELECT COUNT('id') as total FROM registration WHERE status='pending'";
 $resultreg = mysqli_query($conn, $qryreg);
 $rowreg = mysqli_fetch_assoc($resultreg);
+$qrypro = "SELECT COUNT('id') as total FROM projects"; 
+$resultpro = mysqli_query($conn, $qrypro);
+$rowpro = mysqli_fetch_assoc($resultpro);
 
 ?>
 <div class="m-10 p-10">
@@ -27,7 +30,7 @@ $rowreg = mysqli_fetch_assoc($resultreg);
         </div>
         <div class="bg-green-100 shadow-md rounded-lg p-6">
             <h2 class="text-xl font-bold mb-4">Projects</h2>
-            <p class="text-gray-700 text-3xl font-semibold">15</p>
+            <p class="text-gray-700 text-3xl font-semibold"><?= $rowpro['total'];?></p>
         </div>
     </div>
 </div>
